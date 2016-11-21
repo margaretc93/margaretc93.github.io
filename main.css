@@ -122,3 +122,19 @@ a:hover {
 #modal-caption {
 	float: left;
 }
+
+h1{
+ color: #FE3B6D;           
+}
+
+h2, h3{
+ color: #3BECD5;           
+}
+
+.carousel-caption {
+	font-weight: 900;
+	background-color: #fff;
+	opacity: 0.8;
+	width: 20%;
+}
+
