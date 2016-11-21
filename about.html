@@ -4,9 +4,11 @@
   <title>Elly Makem Illustrations</title>
   <script src="scripts/jquery-3.1.1.min.js"></script>
   <link href='bootstrap-3.3.7-dist/css/bootstrap.css' rel='stylesheet'>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link href='main.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts/toggleSearch.js"></script>
 </head>
 
 <body>
@@ -15,6 +17,15 @@
   <center><img src="images/ellylogosmall.png" class="logo"></center>
   <div id="line1">E L L Y</div>
   <div id="line2">Makem</div>
+
+  <!--Search box-->
+  <div id="search">
+    <i class="fa fa-search" role="button" aria-hidden="true" aria-expanded="false" onclick="toggleSearch()"></i>
+    <div class="input-group hidden" id="searchbox">
+      <input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
+      <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+    </div>
+  </div>
 
   <!--navigation-->
   <div id="navigation">
@@ -26,7 +37,7 @@
 </div>
 
 <!-- main content -->
-<div id="maincontent">
+<div class="maincontent">
 	<h1>She's beauty, she's grace, she'll kick you in the face.</h1>
 
 	<table>
@@ -43,7 +54,40 @@
 
 			</td>
 		</tr>
-	</table>
+	</table><br>
+  <hr>
+  <h1><a id="faq"></a>F.A.Qs</h1>
+  <br>
+
+  <b>Q: Do you like cats?</b>
+  <blockquote>
+    <small>I <i>love</i> cats.
+    </small>
+  </blockquote>
+  <br>
+
+  <b>Q: What do you do other than draw?</b>
+  <blockquote>
+    <small>I'm also into Roller Derby - see Venus DeMolish. Also an avid Pokemon/Legend of Zelda/Animal crossing fan. There's nothing better than Animal Crossing at 3 in the morning with your BFFs! Also, K-Pop is my jam!
+    </small>
+    <br>
+    <img src="images/derby.jpg" width="30%" class="photoalbum">
+  </blockquote>
+  <br>
+
+  <b>Q: Do you like cats?</b>
+  <blockquote>
+    <small>I <i>love</i> cats.
+    </small>
+  </blockquote>
+  <br>
+
+  <b>Q: About the cats thing --</b>
+  <blockquote>
+    <small>Cats are the best creatures in the world.
+    </small>
+  </blockquote>
+  <br>  
 </div>
 
 

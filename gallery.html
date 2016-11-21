@@ -4,9 +4,12 @@
   <title>Elly Makem Illustrations</title>
   <script src="scripts/jquery-3.1.1.min.js"></script>
   <link href='bootstrap-3.3.7-dist/css/bootstrap.css' rel='stylesheet'>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link href='main.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts/toggleSearch.js"></script>
+  <script src="scripts/modal.js"></script>
 </head>
 
 <body>
@@ -15,6 +18,15 @@
   <center><img src="images/ellylogosmall.png" class="logo"></center>
   <div id="line1">E L L Y</div>
   <div id="line2">Makem</div>
+
+  <!--Search box-->
+  <div id="search">
+    <i class="fa fa-search" role="button" aria-hidden="true" aria-expanded="false" onclick="toggleSearch()"></i>
+    <div class="input-group hidden" id="searchbox">
+      <input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
+      <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+    </div>
+  </div>
 
   <!--navigation-->
   <div id="navigation">
@@ -25,59 +37,63 @@
 </div>
 </div>
 
-
-
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active carouselimage">
-      <img src="images/illustration4.jpg" alt="Sketchy Portrait">
-      <div class="carousel-caption">
-        <h3>About the Artist</h3>
-      </div>
-    </div>
-
-    <div class="item carouselimage">
-      <img src="images/illustration5.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h3>Gallery</h3>
-      </div>
-    </div>
-
-    <div class="item carouselimage">
-      <img src="images/illustration3.jpg" alt="Flower">
-      <div class="carousel-caption">
-        <h3>Contact</h3>
-      </div>
-    </div>
-
-    <div class="item carouselimage">
-      <img src="images/illustration1.jpg" alt="Flower">
-      <div class="carousel-caption">
-        <h3>About the Artist</h3>
-      </div>
-    </div>
+<div class="maincontent">
+<h1>Still Life</h1>
+<hr/>
+<!-- First Row -->
+<div class='row'>
+  <!-- First Image -->
+  <div class='col-md-4'>
+    <img id="1" class="thumbnail" data-toggle="modal" data-target="#myModal" src="images/illustration1.jpg" alt="<i>Piggy Bank</i> - Marker - <b>£5000</b>" />
   </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+  <!-- Second Image -->
+  <div class='col-md-4'>
+    <img id="2" class="thumbnail" data-toggle="modal" data-target="#myModal" src="images/illustration2.jpg" alt="<i>Girl at Mac</i> - Marker - <b>£650</b>" />
+  </div>
+
+  <!-- Third Image -->
+  <div class='col-md-4'>
+    <img id="2" class="thumbnail" data-toggle="modal" data-target="#myModal" src="images/IMG_6564.PNG" alt="<i>Still Life #1 </i> - Oil, Charcoal - <b>£950</b>" />
+  </div>
+<!-- End of First Row -->
 </div>
+
+<!-- Second Row -->
+<div class='row'>
+  <!-- First Image -->
+  <div class='col-md-4'>
+    <img id="1" class="thumbnail" data-toggle="modal" data-target="#myModal" src="images/illustration3.jpg" alt="<i>Vroom vroom, get out me car</i> - Marker - <b>£5000</b>" />
+  </div>
+
+  <!-- Second Image -->
+  <div class='col-md-4'>
+    <img id="2" class="thumbnail" data-toggle="modal" data-target="#myModal" src="images/IMG_6565.PNG" alt="<i>Still Life #2 </i>- Oil, Charcoal - <b>£800</b>" />
+  </div>
+
+  <!-- Third Image -->
+  <div class='col-md-4'>
+    <img id="2" class="thumbnail" data-toggle="modal" data-target="#myModal" src="images/illustration4.jpg" alt="<i>Margaret</i> - Pencil - <b>£Priceless</b>" />
+  </div>
+<!-- End of First Row -->
+</div>
+
+  <!-- Modal to show the images in fullscreen -->
+  <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <img class="img-responsive" src="" />
+              </div>
+              <div class="modal-footer">
+                  <div id="modal-caption"></div>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
 </body>
 
 </html>

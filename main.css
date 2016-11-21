@@ -1,32 +1,14 @@
-#social-buttons button {
-
-color: white;
-
+.submit, .submit:active {
+	background-color: #3ae3cd;
+	color: #fff;
+	border-color: #000;
 }
 
-.btn-twitter {
-
-background-color: #00acee;
-
-border-color: #009ad5;
-
+.submit:hover {
+	background-color: #fe3b6d;
+	color: #fff;
 }
 
-.btn-facebook {
-
-background-color: #4868ac;
-
-border-color: #314776;
-
-}
-
-.btn-pinterest {
-
-background-color: #b62f26;
-
-border-color: #b62f26;
-
-}
 
 
 body {
@@ -67,7 +49,7 @@ body {
 	padding-bottom: 10px;
 }
 
-#maincontent {
+.maincontent {
 	margin: 0 auto; 
 	width: 60%;
 }
@@ -88,4 +70,55 @@ body {
 
 .logo {
 	height: 6em;
+}
+
+#search {
+	position: absolute;
+	right: 280px;
+	top:15px;
+	width:220px;
+}
+
+#searchbox{
+	padding-left: 5px;
+	width: 200px;
+	float: right;
+}
+
+.fa-search{
+	padding-top: 5px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+	color:;
+}
+
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    width: 400px;
+    height: 300px;
+    margin: -75px 0 0 -100px;
+}
+
+#modal-caption {
+	float: left;
 }

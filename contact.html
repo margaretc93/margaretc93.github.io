@@ -4,79 +4,79 @@
   <title>Elly Makem Illustrations</title>
   <script src="scripts/jquery-3.1.1.min.js"></script>
   <link href='bootstrap-3.3.7-dist/css/bootstrap.css' rel='stylesheet'>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <link href='main.css' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="scripts/toggleSearch.js"></script>
 </head>
 
 <body>
-
 <div id="header">
   <center><img src="images/ellylogosmall.png" class="logo"></center>
   <div id="line1">E L L Y</div>
   <div id="line2">Makem</div>
 
-  <!--navigation-->
-  <div id="navigation">
-  <a href="index.html">HOME</a> ●
-  <a href="about.html">ABOUT</a> ● 
-  <a href="gallery.html">GALLERY</a> ● 
-  <a href="contact.html">CONTACT</a>
-</div>
-</div>
-
-
-
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active carouselimage">
-      <img src="images/illustration4.jpg" alt="Sketchy Portrait">
-      <div class="carousel-caption">
-        <h3>About the Artist</h3>
-      </div>
-    </div>
-
-    <div class="item carouselimage">
-      <img src="images/illustration5.jpg" alt="Chania">
-      <div class="carousel-caption">
-        <h3>Gallery</h3>
-      </div>
-    </div>
-
-    <div class="item carouselimage">
-      <img src="images/illustration3.jpg" alt="Flower">
-      <div class="carousel-caption">
-        <h3>Contact</h3>
-      </div>
-    </div>
-
-    <div class="item carouselimage">
-      <img src="images/illustration1.jpg" alt="Flower">
-      <div class="carousel-caption">
-        <h3>About the Artist</h3>
-      </div>
+  <!--Search box-->
+  <div id="search">
+    <i class="fa fa-search" role="button" aria-hidden="true" aria-expanded="false" onclick="toggleSearch()"></i>
+    <div class="input-group hidden" id="searchbox">
+      <input type="text" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
+      <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
     </div>
   </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+  <!--navigation-->
+  <div id="navigation">
+    <a href="index.html">HOME</a> ●
+    <a href="about.html">ABOUT</a> ● 
+    <a href="gallery.html">GALLERY</a> ● 
+    <a href="contact.html">CONTACT</a> 
+  </div>
+</div>
+</div>
+<div class="maincontent">
+  <h1>Contact the Artist</h1>
+  To make an enquiry about purchasing a piece of art, or just generally leaving magnificent levels of praise for the artist,
+  Please leave your contact details and a delightfully complimentary message below.
+  <br /><br />
+  Once again, complements are more than welcome.
+  <hr />
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleTextarea">Comments/Enquiries:</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  <fieldset class="form-group">
+    <legend>How much do you love Elly's Art?</legend>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        It's only the best art in the world.
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+        See Option 1.
+      </label>
+    </div>
+    <div class="form-check disabled">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+        No seriously, if bees <i>had</i> knees, they'd be as awesome as this art.
+      </label>
+    </div>
+  </fieldset>
+  <button type="submit" class="btn submit">Submit</button>
+</form>
+
+
 </div>
 </body>
 
